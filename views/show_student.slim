@@ -1,0 +1,10 @@
+h1= @student.firstname + " " + @student.lastname
+p Student ID: #{@student.studentid}
+p Address: #{@student.address}, #{@student.city}, #{@student.zipcode}
+p Phone: #{@student.phonenumber}
+p Email: #{@student.emailaddress}
+p <a href="/students">back to students index</a>
+p <a href="/students/#{@student.id}/edit">edit this student</a>
+form action="/students/#{@student.id}" method="POST"
+  input type="hidden" name="_method" value="DELETE"
+  input type="submit" value="delete this student"

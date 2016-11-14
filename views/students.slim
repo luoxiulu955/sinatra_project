@@ -1,0 +1,10 @@
+h1 Students
+a href="/students/new" Create a new student info
+- if @students.any?
+  ul#students
+    -@students.each do |student|
+      li <a href="/students/#{student.id}">#{student.firstname} #{student.lastname}</a>
+- else
+  p No students have been created yet!
+form action="/logout"
+  input type="submit" value="Log out"
