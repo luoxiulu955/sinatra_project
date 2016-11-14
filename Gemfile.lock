@@ -14,12 +14,18 @@ GEM
       dm-core (~> 1.2.0)
     dm-migrations (1.2.0)
       dm-core (~> 1.2.0)
+    dm-postgres-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_postgres (~> 0.10.6)
     dm-sqlite-adapter (1.2.0)
       dm-do-adapter (~> 1.2.0)
       do_sqlite3 (~> 0.10.6)
+    do_postgres (0.10.17)
+      data_objects (= 0.10.17)
     do_sqlite3 (0.10.17)
       data_objects (= 0.10.17)
     eventmachine (1.2.0.1)
+    pg (0.19.0)
     public_suffix (2.0.4)
     rack (1.6.5)
     rack-protection (1.5.3)
@@ -46,7 +52,9 @@ DEPENDENCIES
   bcrypt
   dm-core
   dm-migrations
+  dm-postgres-adapter
   dm-sqlite-adapter
+  pg
   sass
   sinatra
   slim
