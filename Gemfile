@@ -8,4 +8,4 @@ gem "thin"
 gem "bcrypt"
 gem "pg"
 gem "dm-postgres-adapter"
-gem "dm-sqlite-adapter"
+gem "dm-sqlite-adapter", :group => :development
